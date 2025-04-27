@@ -31,7 +31,7 @@ Soy desarrollador Android especializado en Java. También trabajo con Python par
 * [**Redactor LLama 3.1**](https://github.com/R4F405/Redactor-Lllama3.1.git) - Redactor de articulos por Keywords/Videos de Yotube a traves de Llama 3.1 de forma local.
 
 ### 🎮 Otros
-* [**Orc Attack**](https://github.com/R4F405/InstagramEmailScrapper.git) - Videojuego estilo RogueLike frenetico, con diferentes enemigos, armas y habilidades.
+* [**Orc Attack**](https://github.com/R4F405/Orc-attack.git) - Videojuego estilo RogueLike frenetico, con diferentes enemigos, armas y habilidades.
 
 ## Encuentrame en:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tunombre-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/rafaspg)
