@@ -34,7 +34,7 @@ Soy desarrollador Android especializado en Java. También trabajo con Python par
 * [**Orc Attack**](https://github.com/R4F405/Orc-attack.git) - Videojuego estilo RogueLike frenetico, con diferentes enemigos, armas y habilidades.
 
 ## Encuentrame en:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-tunombre-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/rafaspg)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-rafaspg-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/rafaspg)
 <!--
 [![YouTube](https://img.shields.io/badge/YouTube-@tucanal-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=101010)](https://youtube.com/@tucanal)
 [![Twitch](https://img.shields.io/badge/Twitch-@tucanal-9146FF?style=for-the-badge&logo=twitch&logoColor=white&labelColor=101010)](https://twitch.tv/tucanal)
@@ -51,7 +51,7 @@ Explora mi [portfolio de desarrollo](https://r4f405.github.io/Portfolio-Rafa/) d
 
 ## Contacto:
 
-[![Email](https://img.shields.io/badge/tu@email.com-email_personal-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=101010)](mailto:sanpablorafa@gmail.com)
+[![Email](https://img.shields.io/badge/sanpablorafa@gmail.com-email_personal-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=101010)](mailto:sanpablorafa@gmail.com)
 
 ## Estadísticas de GitHub:
 
