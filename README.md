@@ -1,7 +1,7 @@
 # Hola, mi nombre es Rafa 👋
 ### Desarrollador Android & Python Automation
 
-![https://github.com/R4F405](https://raw.githubusercontent.com/R4F405/R4F405/Banner.jpg)
+![https://github.com/R4F405](Banner.jpg)
 
 ## Sobre mí
 Soy desarrollador Android especializado en Java. También trabajo con Python para crear soluciones de automatización, web scraping, bots y aplicaciones de inteligencia artificial.
@@ -22,18 +22,19 @@ Soy desarrollador Android especializado en Java. También trabajo con Python par
 
 ## Proyectos destacados:
 
-### 🤖 Android Apps
-* [**App 1**](https://github.com/tuusuario/app1) - Aplicación Android para [breve descripción].
-* [**App 2**](https://github.com/tuusuario/app2) - Aplicación Android que [funcionalidad principal].
-* [**App 3**](https://github.com/tuusuario/app3) - Una solución para [problema que resuelve].
+### 🤖 JAVA Apps
+* [**GoTask**](https://github.com/R4F405/GoTask) - Aplicación para la gestion facil e intuitiva de tareas.
 
-### 🐍 Python Automation
-* [**Web Scraper**](https://github.com/tuusuario/webscraper) - Herramienta de scraping para [tipo de datos/sitios].
-* [**Bot de Automatización**](https://github.com/tuusuario/autobot) - Bot que automatiza [procesos].
-* [**Proyecto IA**](https://github.com/tuusuario/ai-project) - Implementación de [algoritmo/modelo] para resolver [problema].
+### 🐍 Python Scriptting
+* [**Instagram Email Scrapper**](https://github.com/R4F405/InstagramEmailScrapper.git) - Herramienta de scraping para extraer correos de seguidores en Instagram.
+* [**Bot de Administracion para Discord**](https://github.com/R4F405/FlexBot) - Bot que facilita la gestion y administracion de servidores de Discord.
+* [**Redactor LLama 3.1**](https://github.com/R4F405/Redactor-Lllama3.1.git) - Redactor de articulos por Keywords/Videos de Yotube a traves de Llama 3.1 de forma local.
+
+### 🎮 Otros
+* [**Orc Attack**](https://github.com/R4F405/InstagramEmailScrapper.git) - Videojuego estilo RogueLike frenetico, con diferentes enemigos, armas y habilidades.
 
 ## Encuentrame en:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-tunombre-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/tunombre)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-tunombre-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/rafaspg)
 <!--
 [![YouTube](https://img.shields.io/badge/YouTube-@tucanal-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=101010)](https://youtube.com/@tucanal)
 [![Twitch](https://img.shields.io/badge/Twitch-@tucanal-9146FF?style=for-the-badge&logo=twitch&logoColor=white&labelColor=101010)](https://twitch.tv/tucanal)
@@ -46,7 +47,7 @@ Soy desarrollador Android especializado en Java. También trabajo con Python par
 
 ## Portfolio:
 
-Explora mi [portfolio de desarrollo](https://tusitio.com/portfolio) donde comparto mis mejores proyectos con explicaciones detalladas y código fuente.
+Explora mi [portfolio de desarrollo](https://r4f405.github.io/Portfolio-Rafa/) donde comparto mis mejores proyectos con explicaciones detalladas y código fuente.
 
 ## Contacto:
 
