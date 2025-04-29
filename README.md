@@ -26,7 +26,6 @@ Soy desarrollador Android especializado en Java. También trabajo con Python par
 * [**GoTask**](https://github.com/R4F405/GoTask) - Aplicación para la gestion facil e intuitiva de tareas.
 
 ### 🐍 Python Scriptting
-* [**Instagram Email Scrapper**](https://github.com/R4F405/InstagramEmailScrapper.git) - Herramienta de scraping para extraer correos de seguidores en Instagram.
 * [**Bot de Administracion para Discord**](https://github.com/R4F405/FlexBot) - Bot que facilita la gestion y administracion de servidores de Discord.
 * [**Redactor LLama 3.1**](https://github.com/R4F405/Redactor-Lllama3.1.git) - Redactor de articulos por Keywords/Videos de Yotube a traves de Llama 3.1 de forma local.
 
