@@ -59,9 +59,7 @@ Explora mi [portfolio de desarrollo](https://r4f405.github.io/Portfolio-Rafa/) d
 
 ![R4F405's GitHub stats](https://github-readme-stats.vercel.app/api?username=R4F405&show_icons=true&theme=radical)
 
-## Algunas de mis aportaciones a la comunidad:
-
-* 📊 Herramientas de web scraping para análisis de datos
+<!--## Algunas de mis aportaciones a la comunidad:-->
 
 ## ⚡ Frase que me define:
 > "Automatiza lo tedioso, potencia lo creativo"
