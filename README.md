@@ -1,7 +1,7 @@
 # Hola, mi nombre es Rafa 👋
 ### Desarrollador Android & Python Automation
 
-![https://github.com/R4F405](Banner.jpg)
+![https://github.com/R4F405](img/banner.jpg)
 
 ## Sobre mí
 Soy desarrollador Android especializado en Java. También trabajo con Python para crear soluciones de automatización, web scraping, bots y aplicaciones de inteligencia artificial.
