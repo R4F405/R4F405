@@ -1,8 +1,8 @@
 # Hi, I am Rafa 👋
-### Android Developer & Python Automation Specialist
+### Android Developer
 
 ## About Me
-I am an Android developer specializing in Java. Additionally, I leverage Python to build automation solutions, web scraping tools, bots, and artificial intelligence applications.
+I am an Android developer specializing in Kotlin & Java. Additionally, I leverage Python to build automation solutions, web scraping tools, bots, and artificial intelligence applications.
 
 ## Technologies:
 [![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&labelColor=101010)]()
@@ -20,7 +20,7 @@ I am an Android developer specializing in Java. Additionally, I leverage Python 
 
 ## Featured Projects:
 
-### 🤖 JAVA Apps
+### 🤖 Apps
 * [**GoTask**](https://github.com/R4F405/GoTask) - An intuitive application for streamlined task management.
 
 ### 🐍 Python Scripting
