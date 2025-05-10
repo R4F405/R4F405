@@ -21,15 +21,16 @@ I am an Android developer specializing in Kotlin & Java. Additionally, I leverag
 ## Featured Projects:
 
 ### 🤖 Apps
+* [**Mi Bolsillo App**](https://github.com/R4F405/mi_bolsillo_app) - Visual and secure financial management for your Android.
 * [**GoTask**](https://github.com/R4F405/GoTask) - An intuitive application for streamlined task management.
 
 ### 🐍 Python Scripting
 * [**Jira Integration Bot for Discord**](https://github.com/R4F405/discord-jira-bot) - This bot enhances productivity by unifying Jira and Discord.
 * [**Discord Administration Bot (FlexBot)**](https://github.com/R4F405/FlexBot) - A bot designed to simplify the management and administration of Discord servers.
-* [**Llama 3.1 Article Writer**](https://github.com/R4F405/Redactor-Llama3.1.git) - An application that generates articles from keywords using a local Llama 3.1 model.
+* [**Llama 3.1 Article Writer**](https://github.com/R4F405/Redactor-Llama3.1) - An application that generates articles from keywords using a local Llama 3.1 model.
 
 ### 🎮 Other Projects
-* [**Orc Attack**](https://github.com/R4F405/Orc-attack.git) - A fast-paced RogueLike style video game featuring diverse enemies, weapons, and abilities.
+* [**Orc Attack**](https://github.com/R4F405/Orc-attack) - A fast-paced RogueLike style video game featuring diverse enemies, weapons, and abilities.
 
 ## Find me on:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rafaspg-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/rafaspg)
