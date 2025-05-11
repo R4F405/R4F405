@@ -1,8 +1,8 @@
 # Hi, I am Rafa 👋
-### Android Developer
+### Software Developer
 
 ## About Me
-I am an Android developer specializing in Kotlin & Java. Additionally, I leverage Python to build automation solutions, web scraping tools, bots, and artificial intelligence applications.
+I am an sofware developer specializing in Kotlin & Java. Additionally, I leverage Python to build automation solutions, web scraping tools, bots, and artificial intelligence applications.
 
 ## Technologies:
 [![Android_Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white&labelColor=101010)]()
