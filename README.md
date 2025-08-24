@@ -30,6 +30,7 @@ I am an Java developer specializing in Spring Boot. Additionally, I leverage Pyt
 
 ### 💻 Javascript
 * [**Markdown Pro**](https://github.com/R4F405/markdown-to-html-converter) - Easily convert Markdown files to HTML.
+* [**JWT Inspector**](https://github.com/R4F405/jwt-inspector) - Easily decode and analyze JSON Web Tokens.
 
 ### 🎮 Other Projects
 * [**Orc Attack**](https://github.com/R4F405/Orc-attack) - A fast-paced RogueLike style video game featuring diverse enemies, weapons, and abilities.
