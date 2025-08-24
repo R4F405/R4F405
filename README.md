@@ -26,10 +26,10 @@ I am an Java developer specializing in Spring Boot. Additionally, I leverage Pyt
 ### 🐍 Python Scripting
 * [**Jira Integration Bot for Discord**](https://github.com/R4F405/discord-jira-bot) - This bot enhances productivity by unifying Jira and Discord.
 * [**Discord Administration Bot (FlexBot)**](https://github.com/R4F405/FlexBot) - A bot designed to simplify the management and administration of Discord servers.
-* [**Llama 3.1 Article Writer**](https://github.com/R4F405/markdown-to-html-converter) - An application that generates articles from keywords using a local Llama 3.1 model.
+* [**Llama 3.1 Article Writer**](https://github.com/R4F405/llama3-1-redactor-local) - An application that generates articles from keywords using a local Llama 3.1 model.
 
 ### 💻 Javascript
-* [**Markdown Pro**](https://github.com/R4F405/discord-jira-bot) - Easily convert Markdown files to HTML.
+* [**Markdown Pro**](https://github.com/R4F405/markdown-to-html-converter) - Easily convert Markdown files to HTML.
 
 ### 🎮 Other Projects
 * [**Orc Attack**](https://github.com/R4F405/Orc-attack) - A fast-paced RogueLike style video game featuring diverse enemies, weapons, and abilities.
