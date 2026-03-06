@@ -34,13 +34,6 @@ Especializado en el ecosistema **PHP / Laravel**. Diseño APIs RESTful robustas,
   <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D GitHub Contributions" width="80%">
 </div>
 
-<br>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=R4F405&theme=dark" alt="Top Langs" height="165">
-  <img src="https://github-readme-stats.vercel.app/api?username=R4F405&show_icons=true&theme=radical" alt="GitHub Stats" height="165">
-</div>
-
 ## 💼 Proyectos Destacados
 
 * 🏢 **[RapidGest SaaS](#)** - Plataforma integral de gestión empresarial. Desarrollo de APIs RESTful robustas, autenticación multi-proveedor (Jetstream) y gestión documental Cloud (AWS S3). *(Laravel 11, Livewire 3, Redis, Docker)*
