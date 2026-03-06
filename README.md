@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="./img/Banner.png" alt="Rafa Banner" width="100%">
-</div>
-
 # ¡Hola! Soy Rafa 👋
 ### Desarrollador Full Stack PHP/Laravel | [cite_start]Livewire, Alpine.js & Tailwind [cite: 19]
 
