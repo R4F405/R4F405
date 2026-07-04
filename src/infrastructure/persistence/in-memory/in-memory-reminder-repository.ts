@@ -12,6 +12,12 @@ export class InMemoryReminderRepository implements ReminderRepository {
     return this.byId.get(id) ?? null;
   }
 
+  async findByExternalId(externalId: string): Promise<Reminder | null> {
+    return (
+      [...this.byId.values()].find((reminder) => reminder.externalId === externalId) ?? null
+    );
+  }
+
   async findPendingByUserId(userId: string): Promise<Reminder[]> {
     return [...this.byId.values()].filter(
       (reminder) => reminder.userId === userId && !reminder.completed,

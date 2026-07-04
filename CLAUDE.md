@@ -43,7 +43,8 @@ src/
 │                     #   UnifiedReminderServicePort, MessagingGatewayPort, Clock, IdGenerator
 ├── use-cases/        # Orchestration only; imports domain only.
 │                     #   ExtractIntent, CreateCalendarEvent, CreateReminder, CreateNote,
-│                     #   HandleIncomingMessage (resolve user → extract → dispatch → reply)
+│                     #   SyncReminders (inbound: external app → Memorae),
+│                     #   HandleIncomingMessage (resolve user → sync → extract → dispatch → reply)
 ├── infrastructure/   # Adapters; each implements exactly one port.
 │   ├── ai/           #   AnthropicIntentExtractor + tool schema + defensive payload parser
 │   ├── telegram/     #   TelegramBotAdapter (driving: long polling; driven: MessagingGatewayPort)
@@ -78,9 +79,23 @@ tests/                # Vitest unit tests + fakes (no network, everything throug
 
 Samsung has no public REST API, so the domain exposes `UnifiedReminderServicePort`
 (capability, not vendor). `MsGraphReminderBridge` maps it to Microsoft Graph —
-Samsung Reminder syncs with Microsoft To Do and Samsung Notes with OneNote, so items
-created through Graph land on the user's Samsung devices. `InMemoryReminderService`
-is the credential-free stand-in.
+Samsung Reminder syncs bidirectionally with Microsoft To Do (official One UI
+feature), and notes go to OneNote (Samsung Notes cannot receive external writes;
+OneNote is the deliberate destination). `InMemoryReminderService` is the stateful,
+credential-free stand-in (`simulateExternalReminder` mimics the user typing on the
+phone).
+
+### Bidirectional reminder sync
+
+- **Outbound:** `CreateReminderUseCase` pushes bot-created reminders to the external
+  app and stores the returned `externalId`.
+- **Inbound:** `SyncRemindersUseCase` pulls `listReminders()` snapshots and upserts
+  by `externalId` — tasks created/edited/completed directly in Samsung Reminder or
+  To Do land in `ReminderRepository` without duplicates. It runs on every incoming
+  message and, when `OWNER_TELEGRAM_ID` is set, also on a background poller
+  (`SYNC_INTERVAL_SECONDS`, default 60).
+- `Reminder.dueAt` is optional because external tasks may have no date.
+- The `list_reminders` intent lets users ask the bot for their pending reminders.
 
 ### Known skeleton gaps (next steps)
 

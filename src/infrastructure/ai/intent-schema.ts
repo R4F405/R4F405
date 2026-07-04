@@ -31,7 +31,13 @@ export const CAPTURE_INTENTS_TOOL = {
           properties: {
             type: {
               type: 'string',
-              enum: ['create_calendar_event', 'create_reminder', 'create_note', 'unknown'],
+              enum: [
+                'create_calendar_event',
+                'create_reminder',
+                'create_note',
+                'list_reminders',
+                'unknown',
+              ],
             },
             title: { type: 'string', description: 'Event or note title.' },
             content: { type: 'string', description: 'Reminder or note body.' },
@@ -114,6 +120,8 @@ function parseIntent(raw: unknown): MemoryIntent {
       }
       return { type: 'create_note', content, title: asString(raw.title) };
     }
+    case 'list_reminders':
+      return { type: 'list_reminders' };
     case 'unknown':
       return { type: 'unknown', reason: asString(raw.reason) ?? 'Message was not actionable' };
     default:

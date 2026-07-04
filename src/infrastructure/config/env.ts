@@ -18,6 +18,15 @@ export interface AppConfig {
     readonly locale: string;
     readonly timeZone: string;
   };
+  readonly sync: {
+    /**
+     * Telegram user id that owns the linked Microsoft account. Enables the
+     * background poller; without it, inbound sync still runs on every
+     * incoming message.
+     */
+    readonly ownerTelegramId?: string;
+    readonly intervalSeconds: number;
+  };
 }
 
 export class ConfigError extends Error {}
@@ -44,6 +53,10 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
       locale: env.DEFAULT_LOCALE?.trim() || 'es-ES',
       timeZone: env.DEFAULT_TIMEZONE?.trim() || 'Europe/Madrid',
     },
+    sync: {
+      ownerTelegramId: optional(env, 'OWNER_TELEGRAM_ID'),
+      intervalSeconds: parsePositiveInt(env.SYNC_INTERVAL_SECONDS, 60),
+    },
   };
 }
 
@@ -58,4 +71,9 @@ function required(env: NodeJS.ProcessEnv, key: string): string {
 function optional(env: NodeJS.ProcessEnv, key: string): string | undefined {
   const value = env[key]?.trim();
   return value || undefined;
+}
+
+function parsePositiveInt(raw: string | undefined, fallback: number): number {
+  const value = Number.parseInt(raw ?? '', 10);
+  return Number.isInteger(value) && value > 0 ? value : fallback;
 }

@@ -26,6 +26,7 @@ import { CreateNoteUseCase } from './use-cases/create-note.js';
 import { CreateReminderUseCase } from './use-cases/create-reminder.js';
 import { ExtractIntentUseCase } from './use-cases/extract-intent.js';
 import { HandleIncomingMessageUseCase } from './use-cases/handle-incoming-message.js';
+import { SyncRemindersUseCase } from './use-cases/sync-reminders.js';
 
 function buildCalendarProvider(config: AppConfig): CalendarProviderPort {
   if (config.google.accessToken) {
@@ -73,9 +74,12 @@ async function main(): Promise<void> {
   const telegram = new TelegramBotAdapter(config.telegramBotToken);
 
   // Use-cases
+  const syncReminders = new SyncRemindersUseCase(reminders, reminderService, idGenerator);
   const handleIncomingMessage = new HandleIncomingMessageUseCase(
     users,
+    reminders,
     new ExtractIntentUseCase(intentExtractor, clock),
+    syncReminders,
     new CreateCalendarEventUseCase(calendarEvents, calendarProvider, idGenerator),
     new CreateReminderUseCase(reminders, reminderService, idGenerator),
     new CreateNoteUseCase(notes, reminderService, idGenerator, clock),
@@ -88,8 +92,35 @@ async function main(): Promise<void> {
   // Driving adapter
   telegram.onMessage((message) => handleIncomingMessage.execute(message));
 
+  // Background inbound sync: pulls tasks the user typed directly into
+  // Samsung Reminder / To Do, keyed to the configured owner. Inbound sync
+  // also runs on every incoming message, so this poller is best-effort.
+  let syncTimer: NodeJS.Timeout | undefined;
+  const ownerTelegramId = config.sync.ownerTelegramId;
+  if (ownerTelegramId) {
+    syncTimer = setInterval(() => {
+      void (async () => {
+        const owner = await users.findByTelegramId(ownerTelegramId);
+        if (!owner) return; // owner appears after their first message to the bot
+        const result = await syncReminders.execute(owner);
+        if (result.created || result.updated) {
+          console.info(
+            `[sync] pulled from reminder app: ${result.created} new, ${result.updated} updated`,
+          );
+        }
+      })().catch((error) => console.error('[sync] background sync failed:', error));
+    }, config.sync.intervalSeconds * 1000);
+    syncTimer.unref();
+    console.info(`[bootstrap] reminder sync poller every ${config.sync.intervalSeconds}s`);
+  } else {
+    console.info(
+      '[bootstrap] OWNER_TELEGRAM_ID not set — inbound reminder sync runs per-message only',
+    );
+  }
+
   const shutdown = (signal: string): void => {
     console.info(`[bootstrap] received ${signal}, shutting down`);
+    if (syncTimer) clearInterval(syncTimer);
     telegram.stop();
   };
   process.on('SIGINT', () => shutdown('SIGINT'));

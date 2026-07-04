@@ -1,10 +1,26 @@
 import type { Note } from '../../domain/entities/note.js';
 import type { Reminder } from '../../domain/entities/reminder.js';
 import { ExternalServiceError } from '../../domain/errors.js';
-import type { UnifiedReminderServicePort } from '../../domain/ports/unified-reminder-service.js';
+import type {
+  ExternalReminderSnapshot,
+  UnifiedReminderServicePort,
+} from '../../domain/ports/unified-reminder-service.js';
 import type { AccessTokenProvider } from '../google/google-calendar-adapter.js';
 
 const BASE_URL = 'https://graph.microsoft.com/v1.0';
+
+interface GraphDateTimeTimeZone {
+  dateTime: string;
+  timeZone: string;
+}
+
+interface GraphTodoTask {
+  id: string;
+  title?: string;
+  status?: string;
+  dueDateTime?: GraphDateTimeTimeZone;
+  reminderDateTime?: GraphDateTimeTimeZone;
+}
 
 /**
  * Microsoft Graph implementation of the Unified Reminder & Notes Service.
@@ -25,17 +41,41 @@ export class MsGraphReminderBridge implements UnifiedReminderServicePort {
   ) {}
 
   async createReminder(reminder: Reminder): Promise<{ externalId: string }> {
+    const body: Record<string, unknown> = { title: reminder.content };
+    if (reminder.dueAt) {
+      body.dueDateTime = { dateTime: reminder.dueAt.toISOString(), timeZone: 'UTC' };
+      body.reminderDateTime = { dateTime: reminder.dueAt.toISOString(), timeZone: 'UTC' };
+      body.isReminderOn = true;
+    }
     const task = await this.request<{ id: string }>(
       'POST',
       `/me/todo/lists/${encodeURIComponent(this.todoListId)}/tasks`,
-      {
-        title: reminder.content,
-        dueDateTime: { dateTime: reminder.dueAt.toISOString(), timeZone: 'UTC' },
-        reminderDateTime: { dateTime: reminder.dueAt.toISOString(), timeZone: 'UTC' },
-        isReminderOn: true,
-      },
+      body,
     );
     return { externalId: task.id };
+  }
+
+  /**
+   * Inbound sync: everything currently in the To Do list, which mirrors what
+   * the user typed into Samsung Reminder on their phone.
+   *
+   * Skeleton note: full-list polling ($top=200). For large lists, switch to
+   * Graph delta queries (/tasks/delta) and persist the deltaLink.
+   */
+  async listReminders(): Promise<ExternalReminderSnapshot[]> {
+    const page = await this.request<{ value: GraphTodoTask[] }>(
+      'GET',
+      `/me/todo/lists/${encodeURIComponent(this.todoListId)}/tasks?$top=200`,
+    );
+
+    return page.value
+      .filter((task) => Boolean(task.title?.trim()))
+      .map((task) => ({
+        externalId: task.id,
+        content: task.title as string,
+        dueAt: parseGraphDate(task.reminderDateTime ?? task.dueDateTime),
+        completed: task.status === 'completed',
+      }));
   }
 
   async completeReminder(externalId: string): Promise<void> {
@@ -91,6 +131,20 @@ export class MsGraphReminderBridge implements UnifiedReminderServicePort {
     if (response.status === 204) return undefined as T;
     return (await response.json()) as T;
   }
+}
+
+/**
+ * Graph returns { dateTime, timeZone } where dateTime has no offset.
+ * UTC is normalized precisely; other zones fall back to local parsing —
+ * acceptable for the skeleton, resolve via a tz library in production.
+ */
+function parseGraphDate(value: GraphDateTimeTimeZone | undefined): Date | undefined {
+  if (!value?.dateTime) return undefined;
+  const iso = value.timeZone === 'UTC' && !value.dateTime.endsWith('Z')
+    ? `${value.dateTime}Z`
+    : value.dateTime;
+  const date = new Date(iso);
+  return Number.isNaN(date.getTime()) ? undefined : date;
 }
 
 function escapeHtml(text: string): string {

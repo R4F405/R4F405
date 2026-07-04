@@ -26,6 +26,11 @@ export interface CreateNoteIntent {
   readonly title?: string;
 }
 
+/** The user asks what pending reminders they have. */
+export interface ListRemindersIntent {
+  readonly type: 'list_reminders';
+}
+
 /** Emitted when the utterance is not actionable or could not be understood. */
 export interface UnknownIntent {
   readonly type: 'unknown';
@@ -36,6 +41,7 @@ export type MemoryIntent =
   | CreateCalendarEventIntent
   | CreateReminderIntent
   | CreateNoteIntent
+  | ListRemindersIntent
   | UnknownIntent;
 
 /** Full result of interpreting one user message. */
