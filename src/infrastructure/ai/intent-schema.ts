@@ -10,9 +10,12 @@ import type {
 export const CAPTURE_INTENTS_TOOL = {
   name: 'capture_intents',
   description:
-    'Record every actionable intent found in the user message, plus a short ' +
-    'natural-language reply for the user. A single message can contain several ' +
-    'intents (e.g. a reminder AND a calendar event). Resolve all relative dates ' +
+    'Record the actionable intent(s) found in the user message, plus a short ' +
+    'natural-language reply for the user. The normal case is exactly ONE intent; ' +
+    'emit several only when the user explicitly asks for several distinct things ' +
+    '(e.g. "remind me AND also put it on the calendar"). A reminder (something to ' +
+    'do, usually with a time) and a note (text to store, no alarm) are mutually ' +
+    'exclusive for the same content — never emit both. Resolve all relative dates ' +
     '("mañana", "next Friday") against the reference time and time zone provided, ' +
     'and output them as ISO 8601 timestamps with UTC offset. If nothing is ' +
     'actionable, emit a single intent of type "unknown".',
