@@ -180,10 +180,10 @@ def out(name, build):
 
 # ============================================================== HERO
 TYPED = [
-    "diseño APIs RESTful con Laravel",
+    "construyo funcionalidades SaaS de punta a punta",
     "escribo el test antes que el código",
     "automatizo lo repetitivo con Python",
-    "aprendo cómo funciona la máquina por dentro",
+    "integro IA en flujos reales de negocio",
 ]
 
 
@@ -300,10 +300,10 @@ def sec(num, title, cmd):
 
 # ================================================================ ABOUT
 ABOUT_ROWS = [
-    ("AHORA", "Softtalia — SaaS RapidGest"),
-    ("ENFOQUE", "Lógica de negocio · SQL · TDD"),
-    ("STACK", "PHP 8.2+ · Laravel · TALL"),
-    ("INFRA", "Docker · CI/CD · AWS S3 · Webhooks"),
+    ("AHORA", "Full Stack en Softtalia · desde 2025"),
+    ("PRODUCTO", "RapidGest — CRM, ~100 equipos"),
+    ("ÚLTIMO", "OCR de facturas · chatbot · nóminas"),
+    ("STACK", "Laravel · Livewire · MySQL · Python"),
     ("IDIOMAS", "Español · Català · English"),
 ]
 
@@ -315,11 +315,11 @@ def about(theme):
     section_header(doc, 52, "01", "Sobre mí", "php artisan about")
     S, I = ("sans", 300, "normal"), ("serif", 400, "italic")
     lines = [
-        [("Diseño ", *S), ("APIs RESTful", *I), (" robustas,", *S)],
-        [("automatizo procesos y construyo bases", *S)],
-        [("sólidas para aplicaciones que escalan.", *S)],
-        [("Creo en el ", *S), ("código limpio", *I), (", la", *S)],
-        [("documentación y el ", *S), ("testing automatizado.", *I)],
+        [("Desarrollo ", *S), ("productos SaaS", *I), (" en Softtalia,", *S)],
+        [("sobre todo RapidGest, un CRM para", *S)],
+        [("autónomos y pymes. Hago cada", *S)],
+        [("funcionalidad ", *S), ("de principio a fin", *I), (" y", *S)],
+        [("hablo con clientes cuando algo falla.", *S)],
     ]
     for i, ln in enumerate(lines):
         parts = [(s, f, w, st, t["red"] if f == "serif" else t["text"], 33 if f == "serif" else 28)
@@ -576,7 +576,7 @@ def readme():
 <br>
 
 <p align="center">
-  {pic("about", "Sobre mí: diseño APIs RESTful robustas, automatizo procesos y construyo bases sólidas. Ahora en Softtalia (SaaS RapidGest). PHP 8.2+, Laravel, TALL, Docker, CI/CD, AWS S3. Español, Català, English.", "100%")}
+  {pic("about", "Sobre mí: desarrollo productos SaaS en Softtalia, sobre todo RapidGest, un CRM para autónomos y pymes. Hago cada funcionalidad de principio a fin y hablo con clientes cuando algo falla. Full Stack desde 2025. Últimos: OCR de facturas, chatbot, reparto de nóminas. Laravel, Livewire, MySQL, Python. Español, Català, English.", "100%")}
 </p>
 
 <br>
@@ -621,10 +621,6 @@ def readme():
 
 <p align="center">
   {pic("sec-activity", "05 — Actividad", "100%")}
-</p>
-
-<p align="center">
-  <img src="./profile-3d-contrib/profile-night-green.svg" alt="Contribuciones de GitHub en 3D" width="80%">
 </p>
 
 <p align="center">

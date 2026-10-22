@@ -11,7 +11,7 @@
 <br>
 
 <p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/about.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/about.svg" width="100%" alt="Sobre mí: diseño APIs RESTful robustas, automatizo procesos y construyo bases sólidas. Ahora en Softtalia (SaaS RapidGest). PHP 8.2+, Laravel, TALL, Docker, CI/CD, AWS S3. Español, Català, English."></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/about.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/about.svg" width="100%" alt="Sobre mí: desarrollo productos SaaS en Softtalia, sobre todo RapidGest, un CRM para autónomos y pymes. Hago cada funcionalidad de principio a fin y hablo con clientes cuando algo falla. Full Stack desde 2025. Últimos: OCR de facturas, chatbot, reparto de nóminas. Laravel, Livewire, MySQL, Python. Español, Català, English."></picture>
 </p>
 
 <br>
@@ -56,10 +56,6 @@
 
 <p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/sec-activity.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/sec-activity.svg" width="100%" alt="05 — Actividad"></picture>
-</p>
-
-<p align="center">
-  <img src="./profile-3d-contrib/profile-night-green.svg" alt="Contribuciones de GitHub en 3D" width="80%">
 </p>
 
 <p align="center">
