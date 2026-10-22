@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="142" height="48" viewBox="0 0 142 48" fill="none" role="img" aria-label="Portfolio">
+<title>Portfolio</title>
+<defs><style>
+@font-face{font-family:'R-Inter';font-weight:500;font-style:normal;src:url(data:font/woff2;base64,d09GMgABAAAAAAPkABAAAAAAB0QAAAOIAAQAQgAAAAAAAAAAAAAAAAAAAAAAAAAAGhwbghocKgZgP1NUQVRaAGwRCAqEBIM1ATYCJAMsCxgABCAFgTYHIAwHG8UFAJ4F5ZjXKDygKj6INRtgGLm7XASRHVT17O7BzqyIRiRFcKggfCmDsQaMy3uAaWCU+APgBGa5Lf9hASo7feJc0yjfzrMRJ/bZlNiYAf5I0wdLnX8JvQ4n8iD25o3cQoa42ramT/6nClQDJEnIhEIlIVDFANORR7h6B0O5qLwgCzrLCpIzobM6vigHOnIoSyHsTdKq5IIccIdSjABOmyFXWSUhoU2oJNmIjIO4hIoqAmiBRlP5LZR/wf0C4GxVotRWrbysb6F8UoXycSh/4YthYHYYKqmgkJ2USiIWS/0ugeTtcB10kvLcG8Hl9wCQ5z/GrwqK7vkr4MpakV4xTbz57xQZkhwBABMn+QThkprNFS//F1LpvTQEAvK5lCfQSjUhVJKhngzdpHV5hRUEc7YtSysiEMSKovgsgj2IKqijhUCKvmogBNE9fkUmSTEUQIBE9XwgPLnpoI5aMkkr46VIlyVXgaIS/iCUX5X7pkwYN2rYUIH8CFGWaoKqoAGq4gR4DVRTUDukV1eT8EqIRnntPK9VS0yuVa3qLl7n66u6l5cq7Kh+6v096t/eqrB3VIIbOxj17+9VO1+1g0dOmCdfQK9auWqlXeXMyuyOt6+o/47Pfar7eJm6N5I4fFH3+qo1Vbd37rRxIZIjF6Vnsej7H+kH3ZCjl8YboXLO1Vd6LNS9LKN4s8HWZ7X5nx0dBV//e7ezr8JyWr1sGycF2zYc98iVo6ip66eqw41DzgjVX1p056hLuJNKEma4/+vXmr4uPp6XGFL9qCDrUc2+2zylN5j+uree9HCnnryuTs/YDPnxVj3J4zylKcN+LyPT/gD1lORGVPezfBE5F0Oq1yN2i1njqQmSQOHToRNNc3S5nVOe5yo6tlMd8nkLjHf7OfU4CEqNdHa7+jF1L92Z6kGtLQyL8V6mZl1mYRHgZWb6iSB2kKOCKv+qBTsgzlJrCOSG/fPvVhjLs/6NHpXAx1tb+4Av6H8JcTm/oDZCJoHgcVeKIRnE/znH6Oh01WIIwZ2i4Rapsnopt71B50bI74jL5Hb2ecyPNmAPAqpqJaklCQDwOSuaiSTyyu0aiCFCNTXA7mgToY9GOgh9VTJIGAK2Ue8yFEwTBUqWqliWeAXCJEuXKk0RH8mSpCuWzU+eIukSxcuiZpJ0FZIZ6BElPRTFsgIWKFe2eDlIwP9broPGnxHKI5PPAAAA) format('woff2')}
+
+.fu{opacity:0;animation:fu 1s cubic-bezier(.22,.8,.24,1) forwards}
+@keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.fi{opacity:0;animation:fi 1.2s ease forwards}
+@keyframes fi{to{opacity:1}}
+.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.6s cubic-bezier(.65,0,.35,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.fu,.fi{opacity:1}.draw{stroke-dashoffset:0}}
+
+
+</style></defs>
+<g class="fu" style="animation-delay:0.20s"><rect x=".75" y=".75" width="140.5" height="46.5" rx="23.25" fill="#f6f8fa" stroke="#e1e6eb" stroke-width="1.5"/><circle cx="24" cy="24" r="3.5" fill="#e3261a"/><text x="38.0" y="29.5" font-family="R-Inter,'Inter','Segoe UI',-apple-system,Helvetica,Arial,sans-serif" font-weight="500" font-style="normal" font-size="15" fill="#1f2328" text-anchor="start">Portfolio</text><path d="M111 28 L120 19 M113.52 19 H120 V25.48" stroke="#818b98" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

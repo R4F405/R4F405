@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="48" viewBox="0 0 120 48" fill="none" role="img" aria-label="Email">
+<title>Email</title>
+<defs><style>
+@font-face{font-family:'R-Inter';font-weight:500;font-style:normal;src:url(data:font/woff2;base64,d09GMgABAAAAAAOoABAAAAAABqAAAANNAAQAQgAAAAAAAAAAAAAAAAAAAAAAAAAAGhwbgVYcKgZgP1NUQVRaAFQRCAqDSIMiATYCJAMkCxQABCAFgTYHIAwHG04FSI7DdDsrJ0lT3PmKh+/Hfp37vmjCPJHEQmXI1tWTaCPpdEIkJEKV9Wzad7Yh/vN69ee+ScZrYxbmF9QJ7FiBXeb/mnpRfoAVAPA/XdXzD3KxWSTo1MqmBVIpXsIDsZm3f9dISRpJTlaKZ1/vpwpQBZAwRITwxAiBslCFuJH41FwYzw92tcB+uau2GfYbqp422OOAFwGESiek9dquNqhXrS4IIFNn4MhIUfhSGChiAnFgVCEOLw0GHmFE3w7ETgogKIwkFzBngj1HzFN3wxouAwDZ7Hf6DR5yw9n74HrUpNe2su0d+AwguR7QPwITk2k5uARLrYVLz9pA8VNaAwggO8U/AV2UCJESgToi0INtd3QPUSDsLTf0EIFWe1QtFAlGTJs5AimCqINAEMPxG5DBsIgCEIAE8Eg24USCKimGYymOSqPWFwEgWMtWhc/COWGnsEnYCAIABHoRoAEoAWpAAZwC7gDV3gICk0UJIRBVxxqOc64qhrWgnjRQV529eEGTL5NdAPSQaJKo5IuePTPNRy8Vi5+HGrgyyY9QLn8xIlrzDLHtNYkxsWxRyBTS4UH58JgXyXeCPMDDjJ+8NjKlR4veAcszYuLZXvAfbq7dOLf66uq7967hnmHT4fTq9W0ViYMjCRts0qVVimH1XQ7iiP68cveEpAbXyLg/D/zsqpcOngyoil1vMZuTs37o0/ONiuK8rClfpxPF43Ex3VHLz0Zr56lnyFa9rLMLjQv2808os8Ga8nflMGggxx/RATuCxzzTaiyvHpwNTRpau85ozlSvpHl8Q1RB9Y68soPjP9+96xipzourDvKri7n3+ltxV3NRWENgeFvWSWjuyILGUvwDoAoKykoJ8L9GsG4cyJM+QhM4gLgSq4NAVvS//4YfKzRC/0tJCuB73/wKgD9w+oucl8/iebE6IIMBAn5sXGg1cM9t46TQyaVcJCVyT+3lFiMncRgQYg0nMdmAWQNOECgJxmhiCBBg8wqKiVBWBkYdZgsRlNQ5H7SxFMiQvRREKlyKhFL8pURBLlu2WvV6tVDpUqBWo3oNeqSpVaNRr1YZOvRoVE2lhaUcjYbU8uK75JP0QNOLZWvXSqWNCOD5CLZCm29JmD3BLQUA) format('woff2')}
+
+.fu{opacity:0;animation:fu 1s cubic-bezier(.22,.8,.24,1) forwards}
+@keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.fi{opacity:0;animation:fi 1.2s ease forwards}
+@keyframes fi{to{opacity:1}}
+.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.6s cubic-bezier(.65,0,.35,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.fu,.fi{opacity:1}.draw{stroke-dashoffset:0}}
+
+
+</style></defs>
+<g class="fu" style="animation-delay:0.10s"><rect x=".75" y=".75" width="118.5" height="46.5" rx="23.25" fill="#f6f8fa" stroke="#e1e6eb" stroke-width="1.5"/><circle cx="24" cy="24" r="3.5" fill="#e3261a"/><text x="38.0" y="29.5" font-family="R-Inter,'Inter','Segoe UI',-apple-system,Helvetica,Arial,sans-serif" font-weight="500" font-style="normal" font-size="15" fill="#1f2328" text-anchor="start">Email</text><path d="M89 28 L98 19 M91.52 19 H98 V25.48" stroke="#818b98" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
