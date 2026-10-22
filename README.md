@@ -66,5 +66,5 @@
 </p>
 
 <p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/footer.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/footer.svg" width="100%" alt="“Aunque mi día a día está en el backend, mi verdadera motivación es aprender cómo funciona la máquina por debajo.”"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/footer.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/footer.svg" width="100%" alt="“Si tengo que hacer algo dos veces a mano, a la tercera lo automatizo.”"></picture>
 </p>

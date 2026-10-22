@@ -525,7 +525,7 @@ def button(label, delay):
 # ============================================================= FOOTER
 def footer(theme):
     W, H = 1200, 230
-    doc = Doc(W, H, theme, "Aunque mi día a día está en el backend, mi verdadera motivación es aprender cómo funciona la máquina por debajo.")
+    doc = Doc(W, H, theme, "Si tengo que hacer algo dos veces a mano, a la tercera lo automatizo.")
     t = doc.t
     doc.css.append(".pulse{animation:pulse 3.2s ease-in-out 2s infinite;transform-box:fill-box;transform-origin:center}"
                    "@keyframes pulse{50%{transform:scale(1.7);opacity:.35}}")
@@ -533,8 +533,8 @@ def footer(theme):
     doc.add(f'<path d="M{W / 2} 30 H{W / 2 + 560}" stroke="{t["line"]}" pathLength="1" class="draw"{d(.1)}/>')
     doc.add(f'<g class="fi"{d(.5)}><rect x="{W / 2 - 14}" y="22" width="28" height="16" fill="{t["dot"]}" opacity="0"/>'
             f'<circle cx="{W / 2}" cy="30" r="4" fill="{t["red"]}" class="pulse"/></g>')
-    q1 = "“Aunque mi día a día está en el backend, mi verdadera motivación"
-    q2 = "es aprender cómo funciona la máquina por debajo.”"
+    q1 = "“Si tengo que hacer algo dos veces a mano,"
+    q2 = "a la tercera lo automatizo.”"
     doc.add(f'<g class="fu"{d(.6)}>' + doc.text(W / 2, 104, q1, "serif", 400, 30, "italic", anchor="middle") + "</g>")
     doc.add(f'<g class="fu"{d(.72)}>' + doc.text(W / 2, 144, q2, "serif", 400, 30, "italic", anchor="middle") + "</g>")
     doc.add(f'<g class="fu"{d(1.0)}>' + doc.text(W / 2, 196, "R4F405", "mono", 400, 11.5,
@@ -631,7 +631,7 @@ def readme():
 </p>
 
 <p align="center">
-  {pic("footer", "“Aunque mi día a día está en el backend, mi verdadera motivación es aprender cómo funciona la máquina por debajo.”", "100%")}
+  {pic("footer", "“Si tengo que hacer algo dos veces a mano, a la tercera lo automatizo.”", "100%")}
 </p>
 """
     (ROOT / "README.md").write_text(md, encoding="utf-8")
