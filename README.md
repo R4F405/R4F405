@@ -17,7 +17,7 @@
 <br>
 
 <p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/stack.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/stack.svg" width="100%" alt="Stack: PHP 8.2, Laravel, Livewire, Alpine.js, Tailwind CSS, MySQL, Redis, PestPHP, Sanctum, Jetstream, Python, FastAPI, Playwright, Docker, Sail, AWS S3, GitHub Actions, CI/CD, Webhooks, Swagger / OpenAPI, Git, Linux"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/stack.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/stack.svg" width="100%" alt="Stack: PHP 8.5, Laravel 12, Livewire, Alpine.js, Tailwind CSS, MySQL, Redis, PestPHP, Sanctum, Jetstream, Python, FastAPI, Playwright, Docker, Sail, AWS S3, GitHub Actions, CI/CD, Webhooks, Swagger / OpenAPI, Git, Linux"></picture>
 </p>
 
 <br>
@@ -27,12 +27,12 @@
 </p>
 
 <p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/card-rapidgest.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/card-rapidgest.svg" width="49%" alt="RapidGest SaaS: Plataforma integral de gestión empresarial: APIs RESTful, autenticación multi-proveedor y gestión documental en la nube."></picture>
+  <a href="https://rapidgest.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/card-rapidgest.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/card-rapidgest.svg" width="49%" alt="RapidGest: CRM para autónomos y pymes. Compras con OCR por IA, chatbot que trabaja sobre el CRM y reparto de nóminas."></picture></a>
   <a href="https://github.com/R4F405/MultiScraping"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/card-multiscraping.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/card-multiscraping.svg" width="49%" alt="MultiScraping: Suite modular para captar leads desde Google Maps, Instagram y LinkedIn, con panel web unificado y exportación CSV."></picture></a>
 </p>
 <p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/card-apicore.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/card-apicore.svg" width="49%" alt="API Core: Base para microservicios escalables: patrones de código limpio, recursos API optimizados y documentación OpenAPI."></picture>
-  <a href="https://github.com/R4F405/laravel-task-manager"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/card-taskmanager.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/card-taskmanager.svg" width="49%" alt="Task Manager: SPA reactiva con búsqueda en tiempo real, filtros dinámicos, categorías y exportación a PDF en una sola página."></picture></a>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/card-whistleblowing.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/card-whistleblowing.svg" width="49%" alt="Canal de denuncias: Denuncias anónimas o identificadas. No guarda IP ni metadatos del informante; la empresa gestiona los casos desde su panel."></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/dark/card-licitaciones.svg"><img src="https://raw.githubusercontent.com/R4F405/R4F405/main/assets/light/card-licitaciones.svg" width="49%" alt="Licitaciones: Buscador de licitaciones públicas sobre los datos abiertos de PLACSP. Descarga los pliegos y los resume con IA."></picture>
 </p>
 
 <br>

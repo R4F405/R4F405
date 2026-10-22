@@ -340,7 +340,7 @@ def about(theme):
 
 
 # ================================================================ STACK
-ROW1 = ["PHP 8.2", "Laravel", "Livewire", "Alpine.js", "Tailwind CSS", "MySQL", "Redis", "PestPHP", "Sanctum", "Jetstream"]
+ROW1 = ["PHP 8.5", "Laravel 12", "Livewire", "Alpine.js", "Tailwind CSS", "MySQL", "Redis", "PestPHP", "Sanctum", "Jetstream"]
 ROW2 = ["Python", "FastAPI", "Playwright", "Docker", "Sail", "AWS S3", "GitHub Actions", "CI/CD", "Webhooks",
         "Swagger / OpenAPI", "Git", "Linux"]
 
@@ -422,18 +422,18 @@ def card(num, title, kind, desc, tags, delay=0.0):
 
 
 PROJECTS = [
-    ("rapidgest", "01", "RapidGest SaaS", "Producción · Softtalia",
-     "Plataforma integral de gestión empresarial: APIs RESTful, autenticación multi-proveedor y gestión documental en la nube.",
-     ["Laravel 11", "Livewire 3", "Redis", "AWS S3"], None),
+    ("rapidgest", "01", "RapidGest", "Producción · Softtalia",
+     "CRM para autónomos y pymes. Compras con OCR por IA, chatbot que trabaja sobre el CRM y reparto de nóminas.",
+     ["Laravel 12", "Livewire 3", "Redis", "AWS S3"], "https://rapidgest.com/"),
     ("multiscraping", "02", "MultiScraping", "Open source",
      "Suite modular para captar leads desde Google Maps, Instagram y LinkedIn, con panel web unificado y exportación CSV.",
      ["Python", "FastAPI", "Playwright", "Docker"], "https://github.com/R4F405/MultiScraping"),
-    ("apicore", "03", "API Core", "Arquitectura",
-     "Base para microservicios escalables: patrones de código limpio, recursos API optimizados y documentación OpenAPI.",
-     ["PHP 8.2", "MySQL", "Sanctum", "OpenAPI"], None),
-    ("taskmanager", "04", "Task Manager", "Open source",
-     "SPA reactiva con búsqueda en tiempo real, filtros dinámicos, categorías y exportación a PDF en una sola página.",
-     ["Laravel 12", "Livewire 3", "Alpine", "Pest"], "https://github.com/R4F405/laravel-task-manager"),
+    ("whistleblowing", "03", "Canal de denuncias", "Privado · Ley 2/2023",
+     "Denuncias anónimas o identificadas. No guarda IP ni metadatos del informante; la empresa gestiona los casos desde su panel.",
+     ["Laravel 12", "Livewire 3", "MySQL", "Redis"], None),
+    ("licitaciones", "04", "Licitaciones", "Privado · Automatización",
+     "Buscador de licitaciones públicas sobre los datos abiertos de PLACSP. Descarga los pliegos y los resume con IA.",
+     ["Next.js 16", "Prisma", "PostgreSQL", "MiniMax M3"], None),
 ]
 
 # ============================================================== LAB
